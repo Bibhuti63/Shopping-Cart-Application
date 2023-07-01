@@ -45,7 +45,7 @@ form.addEventListener('submit',(event)=>{
 
     if(!flag){
         message.style.display='inline';
-        message.setAttribute('class','green');
+        message.setAttribute('class','red');
         message.innerText='User does not Exist.';
         return;
     }
@@ -64,9 +64,9 @@ form.addEventListener('submit',(event)=>{
     message.innerText='Login Sucessfully';
 
     //remove message after 2 sec
-    setTimeout(() => {
-        message.remove();
-    }, 2000);
+    // setTimeout(() => {
+    //     message.remove();
+    // }, 2000);
 
     form.reset();
 

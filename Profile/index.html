@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Profile Page</h1>
+    <nav>
+        <div class="logo">
+            <a href="../index.html">Shopping Cart</a>
+        </div>
+    </nav>
+    <div class="container" id="container1">
+        <div style="font-size: 30px; margin-bottom: 20px; text-align: center; font-weight: 600;">My Profile</div>
+        <form class="inputs" id="inputs1">
+            <input type="text" placeholder="First Name" id="first-name">
+            <input type="text" placeholder="langName" id="last-name">
+            <div>
+                <button type="submit">Save Info</button>
+                <span id="message1" style="width: fit-content;margin-left: 20px;"></span>
+            </div>
+        </form>
+    </div>
+
+    <div class="container" id="container2">
+        <div style="font-size: 30px; margin-bottom: 20px; text-align: center; font-weight: 600;">Edit Password</div>
+        <form class="inputs" id="inputs2">
+            <input type="password" placeholder="Old Password" id="old-password">
+            <input type="password" placeholder="New Password" id="new-password">
+            <input type="password" placeholder="Confirm New Password" id="confirm-password">
+            <div class="btns">
+                <button type="submit" id="change-password">Change Password</button>
+                <span style="width: fit-content; margin-left: 20px;" id="message2"></span>
+                <button id="logout">Logout</button>
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
